@@ -1,0 +1,11 @@
+Sample Candidate A
+
+Summary
+Fresher developer building web apps.
+
+Skills
+ReactJS, JavaScript (ES6), Node.js with Express, Postgres, Docker
+Currently learning TypeScript and planning to learn Python.
+
+Projects
+Shopping cart: React front end with an Express API.

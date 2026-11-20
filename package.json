@@ -1,0 +1,31 @@
+{
+  "name": "proof-of-skill",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev -w @proof/api",
+    "dev:worker": "npm run dev -w @proof/worker",
+    "dev:web": "npm run dev -w @proof/web",
+    "dev": "concurrently -n api,worker,web -c blue,magenta,green \"npm:dev:api\" \"npm:dev:worker\" \"npm:dev:web\"",
+    "seed": "node --env-file-if-exists=.env --import tsx apps/api/src/seed.ts",
+    "fixtures": "node --import tsx tests/fixtures/build-zips.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json && npm run typecheck -w @proof/web",
+    "test": "node --env-file-if-exists=.env.test --import tsx --test \"packages/**/*.test.ts\" \"tests/integration/*.test.ts\"",
+    "build": "npm run build -w @proof/web"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "concurrently": "^10.0.6",
+    "fflate": "^0.8.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

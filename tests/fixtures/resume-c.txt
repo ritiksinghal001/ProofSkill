@@ -1,0 +1,7 @@
+Sample Candidate C
+
+Skills
+React, JavaScript, Node.js, Express.js
+
+Projects
+Cart app with a React front end and an Express API.

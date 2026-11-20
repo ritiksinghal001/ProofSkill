@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", "module": "ESNext", "moduleResolution": "Bundler",
+    "strict": true, "skipLibCheck": true, "noEmit": true, "esModuleInterop": true,
+    "resolveJsonModule": true, "allowImportingTsExtensions": true, "types": ["node"]
+  },
+  "include": ["packages/**/*.ts", "apps/api/src/**/*.ts", "apps/worker/src/**/*.ts", "tests/**/*.ts"],
+  "exclude": ["node_modules", "apps/web"]
+}

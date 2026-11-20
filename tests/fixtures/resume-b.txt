@@ -1,0 +1,7 @@
+Sample Candidate B
+
+Skills
+Node.js, Express.js, SQL (PostgreSQL)
+
+Projects
+Mini orders API with Express and Postgres.
