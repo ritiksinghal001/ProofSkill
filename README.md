@@ -1,4 +1,6 @@
-# ProofSkill: candidate assessment app
+# ProofSkill
+Team God's Plan | Deviathon 2.0 (GLA University) | Ranked 19th out of 74 teams
+Problem statement: IM-105, "Proof of skill, not a template resume" (Integraminds)
 
 Candidate-only skill assessment from a resume and one project: resume skills, consent and project, fixed snapshot and evidence, MCQs, history routing, optional lifecycle explanation, project viva, mutation proposal, validated scoring, proof card, and optional authorised comparison.
 Scoring per skill: MCQs 20%, viva 35%, mutation 45%. Evidence and Git history carry no marks. Source of truth: [docs/IMPLEMENTATION_HANDOFF.md](docs/IMPLEMENTATION_HANDOFF.md).
